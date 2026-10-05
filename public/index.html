@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DSA Instructor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <div class="array" aria-hidden="true">
+        <span>2</span><span>7</span><span>11</span><span>16</span><span>23</span><span>31</span><span>42</span>
+      </div>
+      <h1>DSA Instructor</h1>
+      <p>Ask about arrays, trees, graphs, sorting, or dynamic programming. You get plain-language steps, examples, and code.</p>
+    </header>
+
+    <section id="chat" class="chat" aria-live="polite">
+      <div class="empty" id="empty">
+        <p>Try one of these</p>
+        <div class="chips">
+          <button class="chip">Explain binary search step by step</button>
+          <button class="chip">How does a linked list differ from an array?</button>
+          <button class="chip">Write BFS in JavaScript</button>
+          <button class="chip">What is dynamic programming?</button>
+        </div>
+      </div>
+    </section>
+
+    <form id="form" class="composer">
+      <textarea id="input" rows="1" placeholder="Ask a DSA question" aria-label="Your question"></textarea>
+      <button id="send" type="submit">Ask</button>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

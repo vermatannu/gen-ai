@@ -1,0 +1,21 @@
+{
+  "name": "gen-ai",
+  "version": "1.0.0",
+  "description": "LLM project",
+  "repository": {
+    "type": "git",
+    "url": "GEN-AI"
+  },
+  "license": "ISC",
+  "author": "Tannu Verma",
+  "type": "module",
+  "main": "LLM.js",
+  "scripts": {
+    "test": "node llm"
+  },
+  "dependencies": {
+    "@google/genai": "^2.27.0",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1"
+  }
+}
